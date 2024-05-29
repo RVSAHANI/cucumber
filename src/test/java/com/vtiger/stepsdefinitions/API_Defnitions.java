@@ -30,6 +30,9 @@ public class API_Defnitions extends BaseDefinition {
 
 @Given("url")
 public void url_is() {
+	
+	System.out.println("Jenkins Param="+System.getProperty("browser"));
+	System.out.println("Jenkins Param="+System.getProperty("Env"));
 	Endpoint = prop.getProperty("APIEndPoint")+apidt.get(TCName).get("Path");
 	System.out.println(Endpoint);
 	logger.info("Endpoint ="+Endpoint);
